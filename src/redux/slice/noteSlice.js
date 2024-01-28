@@ -53,7 +53,7 @@ export const creatorAsyncGetNotes = () => {
     try {
       const response = await axios.get(
         /*  `${process.env.REACT_APP_BACKEND_URL_PORT}/notes/all` */
-        `https://ensolvers-backend.vercel.app/notes/all`
+        `https://backend-ensolvers.vercel.app/notes/all`
       );
 
       if (response.status === 200) {
@@ -70,7 +70,7 @@ export const creatorAsyncAddNote = (note) => {
     try {
       const response = await axios.post(
         /* `${process.env.REACT_APP_BACKEND_URL_PORT}/notes/`, */
-        "https://ensolvers-backend.vercel.app/notes/",
+        "https://backend-ensolvers.vercel.app/notes/",
         note
       );
       if (response.status === 200) {
@@ -98,7 +98,7 @@ export const creatorAsyncEditNote = (note) => {
     try {
       const response = await axios.put(
         /*    `${process.env.REACT_APP_BACKEND_URL_PORT}/notes/${note.id}`, */
-        `https://ensolvers-backend.vercel.app/notes/${note.id}`,
+        `https://backend-ensolvers.vercel.app/notes/${note.id}`,
         note
       );
       if (response.status === 200) {
@@ -128,7 +128,7 @@ export const creatorAsyncDeleteNote = (note) => {
     try {
       const response = await axios.delete(
         /*    `${process.env.REACT_APP_BACKEND_URL_PORT}/notes/${note.id}` */
-        `https://ensolvers-backend.vercel.app/notes/${note.id}`
+        `https://backend-ensolvers.vercel.app/notes/${note.id}`
       );
 
       if (response.status === 200) {
