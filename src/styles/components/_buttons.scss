@@ -1,0 +1,148 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 4px 10px 4px 10px;
+
+  transition: color 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: darken($color: white, $amount: 10);
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(to bottom, #1948ca, #012485);
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+
+  &:disabled {
+    background-color: lighten($color: $primary, $amount: 15);
+  }
+
+  &:hover {
+    background-color: darken($color: $primary, $amount: 15);
+  }
+}
+
+.btn-danger {
+  background: linear-gradient(to bottom, #e81010, #bc0000);
+  border-radius: 2px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+
+  &:disabled {
+    background-color: lighten($color: $primary, $amount: 15);
+  }
+
+  &:hover {
+    background-color: darken($color: $primary, $amount: 15);
+  }
+}
+
+.btn-active {
+  background: linear-gradient(to bottom, #b1c652, #9ba608);
+  border-radius: 2px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+
+  &:disabled {
+    background-color: lighten($color: $primary, $amount: 15);
+  }
+
+  &:hover {
+    background-color: darken($color: $primary, $amount: 15);
+  }
+}
+
+.btn-all {
+  background: linear-gradient(to bottom, #181b0f, #161609);
+  border-radius: 2px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+
+  &:disabled {
+    background-color: lighten($color: $primary, $amount: 15);
+  }
+
+  &:hover {
+    background-color: darken($color: $primary, $amount: 15);
+  }
+}
+.btn-success {
+  background: linear-gradient(to bottom, #1948ca, #012485);
+  border-radius: 2px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+
+  &:disabled {
+    background-color: lighten($color: $primary, $amount: 15);
+  }
+
+  &:hover {
+    background-color: darken($color: $primary, $amount: 15);
+  }
+}
+
+.btn-block {
+  width: 100%;
+}
+.editIcon {
+  cursor: pointer;
+  color: #28810a;
+
+  transition: color 0.3s;
+}
+
+.editIcon:hover {
+  color: #6ffca7;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  color: #28810a;
+
+  transition: color 0.3s;
+}
+.deleteIcon:hover {
+  color: #6ffca7;
+}
+
+@media screen and (max-width: 667px) {
+  .editIcon {
+    width: 18px !important;
+  }
+
+  .deleteIcon {
+    width: 18px !important;
+  }
+}
+
+.input-search {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+
+  ::placeholder {
+    color: #888;
+  }
+
+  :focus {
+    outline: none;
+    border-color: #6f7c58;
+    box-shadow: 0 0 4px rgba(111, 124, 88, 0.4);
+  }
+}

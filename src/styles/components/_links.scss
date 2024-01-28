@@ -1,0 +1,44 @@
+.link {
+  color: $dark-grey;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.boxLinkLight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background: radial-gradient(#8f7c58, #ab9f87);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+  .boxLinkLight {
+    margin-bottom: 0.3rem;
+    height: 50px;
+  }
+}
+
+.linkLight {
+  color: $light-grey;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  &:hover {
+    color: darken($color: $primary, $amount: 20);
+  }
+}
+
+.linkLight.active {
+  color: darken($color: $primary, $amount: 20);
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+  &:hover {
+    color: darken($color: $primary, $amount: 20);
+  }
+}

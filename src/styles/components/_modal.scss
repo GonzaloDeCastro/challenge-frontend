@@ -1,0 +1,12 @@
+.modal__add__edit {
+  width: 100%;
+}
+
+@media screen and (max-width: 667px) {
+  .modal__add__edit {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+  }
+}

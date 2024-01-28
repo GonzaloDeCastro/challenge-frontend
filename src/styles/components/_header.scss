@@ -1,0 +1,23 @@
+.containerHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #6b5738, #8f7c58);
+  font-size: 25px;
+  color: antiquewhite;
+  height: 10%;
+}
+
+.headerSection {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-image: linear-gradient(
+    to top,
+    hsl(120, 57%, 23%),
+    hsl(121, 71%, 15%)
+  );
+  color: #b6fca6;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

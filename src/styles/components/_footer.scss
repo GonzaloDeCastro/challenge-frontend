@@ -1,0 +1,15 @@
+.footer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 5%;
+  background: linear-gradient(to bottom, #9c8662, #8f7c58, #7c5c3e);
+  color: antiquewhite;
+}
+
+@media screen and (max-width: 667px) {
+  .footer2 {
+    height: 3rem;
+  }
+}

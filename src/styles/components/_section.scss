@@ -1,0 +1,122 @@
+.containerSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem 1rem 0rem 1rem;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  height: 500px;
+  overflow: auto;
+  color: #6b5738;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.headerTable {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #349449, #79e035);
+  color: #fff;
+  width: 70vw;
+  margin-top: 0.5rem;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.bodyTable {
+  height: 400px;
+  width: 70vw;
+  overflow: auto;
+  background: linear-gradient(to bottom, #1f441e, #467b38);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.titleFieldProvider {
+  width: 20%;
+  padding-left: 0.5rem;
+}
+
+.fieldProvider {
+  width: 20%;
+  padding-left: 0.5rem;
+}
+.titleFieldNote {
+  width: 25%;
+  padding-left: 0.5rem;
+}
+
+.fieldNote {
+  width: 25%;
+  padding-left: 0.5rem;
+}
+
+.rowTable {
+  display: flex;
+  margin-top: 0.5rem;
+  background: linear-gradient(to bottom, #dcffc2, #e1f0dd);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.optionItem {
+  display: flex;
+  width: 10%;
+}
+
+@media screen and (max-width: 800px) {
+  .containerSection {
+    margin: 1rem 0rem 0rem 0rem;
+    width: 98%;
+  }
+  .homeContainer {
+    margin-top: -2%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .containerSection {
+    margin: 1rem 0rem 0rem 0rem;
+    width: 98%;
+    z-index: 0;
+  }
+
+  .bodyTable {
+    height: 200px;
+  }
+  .rowTable {
+    width: 99%;
+  }
+  .headerTable {
+    display: flex;
+    width: 70vw;
+    justify-content: center;
+  }
+  .titleFieldProvider {
+    font-size: 12px;
+  }
+  .titleFieldProduct {
+    font-size: 12px;
+  }
+  .fieldProvider {
+    font-size: 10px;
+  }
+  .fieldProduct {
+    font-size: 12px;
+  }
+  .optionContainer {
+    width: 14%;
+    display: flex;
+  }
+
+  .optionItem {
+    font-size: 10px;
+    margin-left: 0rem;
+  }
+}
